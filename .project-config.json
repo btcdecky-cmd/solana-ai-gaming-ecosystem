@@ -1,0 +1,43 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "server",
+    "db",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://4C9aar6SFfKYCFi.3f149c7b9cfe:Jsw2JH72hNX6DaPM16NK@gateway04.us-east-1.prod.aws.tidbcloud.com:4000/9GSfDdqNNqohUD3gG7wneV?ssl={\"rejectUnauthorized\":true}"
+  },
+  "experiments": [
+    "no_db_push"
+  ],
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663447470238/9GSfDdqNNqohUD3gG7wneV",
+    "access_key_id": "ASIAZV3A2ECZDHO4EN65",
+    "secret_access_key": "e5zLChrSGGKEx5kYqGp9DUOx9yBcpzkNaEqKPNyj",
+    "session_token": "IQoJb3JpZ2luX2VjEK///////////wEaCXVzLWVhc3QtMSJIMEYCIQDsjpT8EnetJYLaix1PqyEiK3zAX+owNTeMyFLia+eyTAIhAMMmG+z2dBMqEokUOJIt1h6+FNtvdfxP4KtI9F4MC5leKvYDCHgQBBoMNjY1Mzg2MDk4ODY2Igxo4Vbt8t+6p3uHf6Yq0wOossGeOt3ZHAUkpfSocsn/QMqdOsBE8CfJ1F4g8OUbfyFuyAJFc/bhTJhwOlTg0e1ZnkOLkjV0rJJZ6kZJB1XdAEHi3Myp3TMwy7Lir9/W5/3V3U6CbQv8exdqrculh6wMlCuQ04jbcIch9ly2bXNjjCp42ZCZ1OJ5E7BydfMI4PVTzKbmcpeCznwbFwxEsP3HzheWdmds0sa1XLNs2DI9vMVbOIz9VKHkdCz8sVKZxzp9Wm3UgwzCVKGF47GkZzwDRUAND3IIQ+AwDhKjIhWc3zG0P84B+YaTtWhPf2NYfgAkbhMGo9jrPB8b4Rb30el6NOJaHOTkwh36CZCRYt2PzjApDfggQA7/qNMPC2r/RJNqXFcYBTdz8jcHK+XVVQzcZlKlKq4X44ro/XlZiKbu+sCDel6r653jzCfSNVKhawDhoCnsGSmsIzU2Ugv/ROVHV/NVVvRGx2kJyIpeMCSA71SM9v/26BI5FfbtKr/Il+mRliHmQcYVasqfetzpbKFKHix8fjclF6KjA7vs5g5slVNJ+lt6ApKblSIpxQas8ZGszvRYpT5ZYV13ALT22KpdoihB2qv8kBGHthpLI0TEudaMiMVIX/Bq/K1gdwRMD7pFezCo6pzQBjqcAUJ1SK0t9e7S5F8rW2X5xVttMscRf72iTNAfEDFiNgtJZQRE0TVunD4mr6CxIhakn5C+dSMkH4rZPiu/LBVcp+kTaH7uOEtia/Vcq2AYKBturM1dyZa2j6HvR8y0+ViSpnItVniBpZyuvtSsL/sul4uBqfPTTAEAADEOQ8PzcAriCN6ZHPrcMDn3h+pgjnetgkLMnMaPRTLlAcguKw==",
+    "expiration": "2026-05-16T03:00:56.000Z"
+  },
+  "name": "solana-ai-gaming-ecosystem",
+  "path": "/home/ubuntu/solana-ai-gaming-ecosystem",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "g3vrRgm5zLDYeZXJSZQbXv",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "VD3NxdfheFkiit722ES9zp",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Decky Btc",
+    "OWNER_OPEN_ID": "C3No7oQjGGto272uJQSVTo",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "b3959868-e300-4f66-90a9-70236bca7747",
+    "VITE_APP_ID": "9GSfDdqNNqohUD3gG7wneV",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Solana AI Gaming Ecosystem",
+    "VITE_FRONTEND_FORGE_API_KEY": "Bzwvjano3u8sR3gXip3V9m",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-db-user",
+  "test_command": "pnpm test"
+}
