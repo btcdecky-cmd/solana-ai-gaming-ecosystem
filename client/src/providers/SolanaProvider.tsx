@@ -1,26 +1,37 @@
-// Frontend Solana Integration Stub
-import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
-import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
+import React, { useMemo } from "react";
+import {
+  ConnectionProvider,
+  WalletProvider,
+} from "@solana/wallet-adapter-react";
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   PhantomWalletAdapter,
   SolflareWalletAdapter,
 } from "@solana/wallet-adapter-wallets";
-import React, { useMemo } from "react";
+import { clusterApiUrl } from "@solana/web3.js";
 
+/**
+ * Solana Provider Component
+ * Provides wallet connection context for Phantom and Solflare wallets
+ * Connects to Solana mainnet by default
+ */
 export const SolanaProvider = ({ children }: { children: React.ReactNode }) => {
-  const endpoint = "https://api.mainnet-beta.solana.com";
+  const network = WalletAdapterNetwork.Mainnet;
+  const endpoint = useMemo(
+    () => process.env.SOLANA_RPC_URL || clusterApiUrl(network),
+    [network]
+  );
 
-  const wallets = useMemo(() => [new PhantomWalletAdapter(), new SolflareWalletAdapter()], []);
+  const wallets = useMemo(
+    () => [new PhantomWalletAdapter(), new SolflareWalletAdapter()],
+    []
+  );
 
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
-        <WalletModalProvider>{children}</WalletModalProvider>
+        {children}
       </WalletProvider>
     </ConnectionProvider>
   );
 };
-
-/* Usage in App */
-// import { SolanaProvider } from "./providers/SolanaProvider";
-// Wrap <SolanaProvider> around the application to enable wallet functionality.
